@@ -2,6 +2,8 @@ plugins {
 	java
 	id("org.springframework.boot") version "4.0.1"
 	id("io.spring.dependency-management") version "1.1.7"
+	id("org.sonarqube") version "7.2.1.6560"
+	jacoco
 }
 
 group = "com.app"
@@ -16,6 +18,12 @@ java {
 
 repositories {
 	mavenCentral()
+}
+
+sonar {
+	properties {
+		property()
+	}
 }
 
 dependencies {

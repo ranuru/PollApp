@@ -22,7 +22,8 @@ repositories {
 
 sonar {
 	properties {
-		property()
+		property("sonar.projectKey", "PollApp")
+		property("sonar.host.url", "http://localhost:9000")
 	}
 }
 

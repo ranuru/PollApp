@@ -37,6 +37,8 @@ dependencies {
 	
 	testCompileOnly("org.projectlombok:lombok:1.18.42")
 	testAnnotationProcessor("org.projectlombok:lombok:1.18.42")
+
+	implementation("com.fasterxml.jackson.core:jackson-databind:2.17.2")
 }
 
 tasks.withType<Test> {
